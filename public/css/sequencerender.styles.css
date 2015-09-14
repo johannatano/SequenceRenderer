@@ -1,0 +1,55 @@
+#sequence-renderer{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  left:0;
+}
+
+#sequence-renderer .stage {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+#controls{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+  left:0;
+	cursor: pointer;
+	cursor: -webkit-grab;
+}
+
+
+#controls .timeline {
+	width: 100%;
+	height: 5px;
+	background: #000;
+	position: absolute;
+	bottom: 0px;
+}
+
+#controls .timeline .indicator{
+	width: 5%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	bottom: 0;
+}
+
+
+#controls .timeline .buffer{
+	width: 0%;
+	height: 100%;
+	background: #999;
+	position: absolute;
+	bottom:0;
+
+	-webkit-transition: width 500ms;
+	-moz-transition: width 500ms;
+	-o-transition: width 500ms;
+	transition: width 500ms;
+}

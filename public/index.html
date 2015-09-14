@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>SequenceRenderer</title>
+      <link rel="stylesheet" type="text/css" href="css/sequencerender.styles.css" media="all" />
+      <script src="js/lib/jquery-2.1.0.min.js"></script>
+      <script src="js/demo.js"></script>
+      <script src="js/sequencerenderer/SequenceRenderer.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+	<script type="text/javascript">
+
+      function init(){
+         var app = new App();
+         var isMobile = false;
+         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+           isMobile = true;
+         }
+         app.init(isMobile);
+      }
+	</script>
+</head>
+<body onload="init();">
+
+ </body>
+</html>

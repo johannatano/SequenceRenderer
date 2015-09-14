@@ -1,0 +1,12 @@
+{
+  "name": "sequencerenderer",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "~4.10.2",
+    "multer": "~0.1.6",
+    "util": "~0.10.3",
+    "mime": "~1.2.11",
+    "easyimage": "~2.1.0",
+    "fs-extra": "~0.24.0"
+  }
+}
