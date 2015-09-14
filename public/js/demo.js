@@ -50,6 +50,10 @@ App.prototype.init = function(isMobile){
 
 
 			$(window).resize(renderer.resize.bind(renderer));
+	}).error(function(){
+
+		$('body').append($('<p>').html('No files found, please use the uploader to generate assets'));
+		$('body').append($('<a>').attr('href', '/upload.html').html('Go to the uploader').addClass('btn btn-default'));
 	});
 
 };

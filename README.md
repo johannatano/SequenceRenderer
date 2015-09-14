@@ -1,32 +1,35 @@
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
+# ${1:SequenceRenderer}
 
-TODO: Write a project description
-
+Converts a JPG Sequence into a scrollable video view. Runs in a Node+Express environment. Includes an uploader-tool for automatic creation of assets.
+Uses [ImageMagick](http://www.imagemagick.org/script/index.php) to convert uploaded highres images to lowres format used in the rendering.
 ## Installation
 
-TODO: Describe the installation process
+Install ImageMagick using [Homebrew](http://brew.sh/):
+```bash
+$ brew install imagemagick
+```
 
-## Usage
+cd to the root directory of this repo
+```bash
+$ npm install
+```
 
-TODO: Write usage instructions
+Run the server
+```bash
+$ node Server.js
+```
 
-## Contributing
+The server should now be up and running on 0.0.0.0:3000
 
-1. Fork it!
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request :D
 
-## History
+## Local testing on other devices
 
-TODO: Write history
-
-## Credits
-
-TODO: Write credits
+Pass your IP address to the server for enabling local testing through other devices
+```bash
+$ node Server.js YOUR_IP
+```
 
 ## License
 
