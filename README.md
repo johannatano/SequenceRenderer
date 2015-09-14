@@ -34,3 +34,5 @@ Pass your IP address to the server for enabling local testing through other devi
 ```bash
 $ node Server.js YOUR_IP
 ```
+
+The server should now be up and running on YOUR_IP:3000
